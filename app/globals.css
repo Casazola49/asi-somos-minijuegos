@@ -1,26 +1,51 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --font-display: var(--font-bangers);
+  --font-sans: var(--font-outfit);
+
+  --color-comic-red: #FF4500;
+  --color-comic-blue: #00BFFF;
+  --color-comic-yellow: #FFD700;
+  --color-comic-orange: #FFA500;
+  --color-comic-pink: #FF0099;
+  --color-comic-green: #32CD32;
+  --color-comic-purple: #9400D3;
+  --color-comic-black: #000000;
+  --color-comic-white: #ffffff;
+
+  --shadow-comic: 6px 6px 0px 0px #000000;
+  --shadow-comic-hover: 3px 3px 0px 0px #000000;
+  --shadow-comic-lg: 10px 10px 0px 0px #000000;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* Custom Utilities for Comic Style */
+@layer utilities {
+  .text-stroke {
+    -webkit-text-stroke: 1px black;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  .text-stroke-2 {
+    -webkit-text-stroke: 2px black;
+  }
+
+  .text-stroke-white {
+    -webkit-text-stroke: 1px white;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-comic-yellow);
+  color: var(--color-comic-black);
+  font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  letter-spacing: 0.05em;
 }
