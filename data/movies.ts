@@ -2,7 +2,7 @@ export interface Movie {
     id: string;
     emojis: string;
     title: string;
-    genre: "Animation" | "Action" | "Sci-Fi" | "Horror" | "Drama" | "Comedy" | "Thriller" | "Animación" | "Fantasía";
+    genre: "Animation" | "Acción" | "Sci-Fi" | "Terror" | "Drama" | "Comedia" | "Aventura" | "Animación" | "Fantasía" | "Serie" | "Musical" | "Familiar" | "Crimen" | "Western" | "Romance" | "Suspenso";
 
 
 }
@@ -184,7 +184,7 @@ export const movies: Movie[] = [
     { id: "174", emojis: "🚗💨🏁🕶️", title: "Ford vs Ferrari", genre: "Drama" },
     { id: "175", emojis: "🏔️💍🌋👬", title: "El Hobbit", genre: "Fantasía" },
     { id: "176", emojis: "👮🏿‍♂️👮🏻‍♂️🚔💊🔫", title: "Bad Boys", genre: "Acción" },
-    { id: "177", emojis: "🕵️‍♂️🔎🇬🇧🎻", title: "Sherlock Holmes", genre: "Misterio" },
+    { id: "177", emojis: "🕵️‍♂️🔎🇬🇧🎻", title: "Sherlock Holmes", genre: "Suspenso" },
     { id: "178", emojis: "💰🏃‍♂️👮‍♂️✈️", title: "Atrápame si puedes", genre: "Crimen" },
     { id: "179", emojis: "🧠🔨🦸‍♂️🍼🇺🇸", title: "The Boys", genre: "Sci-Fi" },
     { id: "180", emojis: "🧪👴👦🔫🌌", title: "Rick y Morty", genre: "Sci-Fi" },
